@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["blocksurf <blocksurf@protonmail.com>"]
 license = "MIT"
 description = "Bitcoin OpCodes that can be used interchangably with unsigned primitives"
-keywords = ["bitcoin", "opcodes"]
+keywords = ["bitcoin", "opcodes", "no-std"]
 categories = ["api-bindings", "cryptography::cryptocurrencies", "encoding", "no-std"]
 repository = "https://github.com/blocksurf/bitcoin_opcodes"
 
