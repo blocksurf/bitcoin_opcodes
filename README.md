@@ -1,17 +1,18 @@
-## bitcoin_opcodes
+bitcoin_opcodes
+========
 
 `bitcoin_opcodes` provides OpCodes that can be used interchangably with numeric primitives
 
-# Usage
+## Usage
 
 Add this to your `Cargo.toml`:
 
-```
+```toml
 [dependencies]
 bitcoin_opcodes = "0.1.0"
 ```
 
-# Features
+## Features
 
 This crate supports two features: `std` and `alloc`.
 
