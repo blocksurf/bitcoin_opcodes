@@ -1,0 +1,25 @@
+[package]
+name = "bitcoin_opcodes"
+version = "0.1.0"
+edition = "2021"
+authors = ["blocksurf <blocksurf@protonmail.com>"]
+license = "MIT"
+description = "Bitcoin OpCodes that can be used interchangably with unsigned primitives"
+keywords = ["bitcoin", "opcodes"]
+categories = ["api-bindings", "cryptography::cryptocurrencies", "encoding", "no-std"]
+repository = "https://github.com/blocksurf/bitcoin_opcodes"
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["lib"]
+
+[features]
+default = ["std"]
+std = ["serde/std", "strum/std"]
+alloc = ["serde/alloc"]
+
+[dependencies]
+serde = { version = "^1.0", default_features = false, features = ["derive"] }
+strum = { version = "^0.25.0", default-features = false, features = ["derive"] }
